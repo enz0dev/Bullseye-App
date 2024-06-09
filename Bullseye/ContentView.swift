@@ -12,6 +12,11 @@ struct ContentView: View {
     VStack {
       Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
       Text("67")
+      HStack {
+        Text("0")
+        Slider(value: .constant(50), in: 1.0...100.0)
+        Text("100")
+      }
     }
   }
 }
