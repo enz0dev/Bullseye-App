@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
-    
+    VStack {
+      Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
+      Text("67")
+    }
   }
 }
 
