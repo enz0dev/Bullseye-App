@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+// we are defining a template for an instance called ContentView that is a View
 struct ContentView: View {
+  // we are defining a computed property called body. body is a property of type some View
   var body: some View {
     VStack {
       Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
