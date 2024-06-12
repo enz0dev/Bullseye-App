@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
   // we are defining a computed property called body. body is a property of type some View
   @State private var alertIsVisible: Bool = false
+  @State private var sliderValue: Double = 50
   var body: some View {
     VStack {
       Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
@@ -26,7 +27,7 @@ struct ContentView: View {
       HStack {
         Text("0")
           .bold()
-        Slider(value: .constant(50), in: 1.0...100.0)
+        Slider(value: $sliderValue, in: 1.0...100.0)
         Text("100")
           .bold()
       }
