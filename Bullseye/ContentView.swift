@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
   // we are defining a computed property called body. body is a property of type some View
   @State private var alertIsVisible: Bool = false
-  @State private var sliderValue: Double = 50
+  @State private var sliderValue: Double = 50.0
   var body: some View {
     VStack {
       Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
@@ -43,7 +43,8 @@ struct ContentView: View {
           }
         },
         message: {
-          Text("This is my first alert!")
+          var roundedValue: Int = Int(sliderValue.rounded())
+          Text("The slider's value is \(roundedValue).")
         }
       )
     }
