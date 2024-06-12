@@ -32,6 +32,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D263C5112C19D0FE004E3722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D263C5132C19D13D004E3722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2F7CA7D2C14C18600606636 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D2F7CA6F2C14C18600606636 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				D2F7CA7B2C14C18600606636 /* BullseyeApp.swift */,
-				D2F7CA7D2C14C18600606636 /* ContentView.swift */,
+				D263C5132C19D13D004E3722 /* Views */,
+				D263C5112C19D0FE004E3722 /* Models */,
 				D2F7CA7F2C14C18700606636 /* Assets.xcassets */,
 				D2F7CA812C14C18700606636 /* Preview Content */,
 			);
