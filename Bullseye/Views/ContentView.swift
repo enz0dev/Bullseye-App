@@ -44,7 +44,7 @@ struct ContentView: View {
         .padding(
           20.0)
         .background(
-          Color(.blue)
+          Color("ButtonColor")
         )
         .foregroundColor(
           .white)
