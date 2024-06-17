@@ -16,12 +16,13 @@ struct ContentView: View {
   
   var body: some View {
     VStack {
-      Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
+      Text("🎯🎯🎯\nPut the Bullseye as close as you can to".uppercased())
         .bold()
         .multilineTextAlignment(.center)
         .lineSpacing(4.0)
         .font(.footnote)
         .kerning(2.0)
+        .padding(.horizontal, 30)
       Text(String(game.target))
         .font(.largeTitle)
         .kerning(-1)
@@ -33,6 +34,7 @@ struct ContentView: View {
         Text("100")
           .bold()
       }
+      .padding()
       Button("Hit me".uppercased()) {
         alertIsVisible = true
       }
