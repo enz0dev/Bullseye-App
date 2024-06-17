@@ -33,9 +33,19 @@ struct ContentView: View {
         Text("100")
           .bold()
       }
-      Button("Hit me") {
+      Button("Hit me".uppercased()) {
         alertIsVisible = true
       }
+      .padding(
+        20.0)
+      .background(
+        Color(.blue)
+      )
+      .foregroundColor(
+        .white)
+      .cornerRadius(21.0)
+      .bold()
+      .font(.title3)
       .alert(
         "Hello there!",
         isPresented: $alertIsVisible,
