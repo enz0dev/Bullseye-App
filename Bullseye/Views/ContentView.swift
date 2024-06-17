@@ -16,6 +16,8 @@ struct ContentView: View {
   
   var body: some View {
     ZStack {
+      Color("BackgroundColor")
+        .ignoresSafeArea()
       VStack {
         Text("🎯🎯🎯\nPut the Bullseye as close as you can to".uppercased())
           .bold()
