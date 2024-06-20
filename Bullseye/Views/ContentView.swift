@@ -19,12 +19,9 @@ struct ContentView: View {
       Color("BackgroundColor")
         .ignoresSafeArea()
       VStack {
-        InstructionText()
-        Text(String(game.target))
-          .font(.largeTitle)
-          .kerning(-1)
-          .fontWeight(.black)
-          .foregroundColor(Color("TextColor"))
+        InstructionText(text: "🎯🎯🎯\nPut the Bullseye as close as you can to")
+          .padding(.horizontal, 30)
+        BigNumberText(text: String(game.target))
         HStack {
           Text("0")
             .bold()

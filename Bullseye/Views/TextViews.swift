@@ -8,18 +8,34 @@
 import SwiftUI
 
 struct InstructionText: View {
+  var text: String
+  
   var body: some View {
-    Text("🎯🎯🎯\nPut the Bullseye as close as you can to".uppercased())
+    Text(text.uppercased())
       .bold()
       .multilineTextAlignment(.center)
       .lineSpacing(4.0)
       .font(.footnote)
       .kerning(2.0)
-      .padding(.horizontal, 30)
+      .foregroundColor(Color("TextColor"))
+  }
+}
+
+struct BigNumberText: View {
+  var text: String
+  
+  var body: some View {
+    Text(text)
+      .font(.largeTitle)
+      .kerning(-1)
+      .fontWeight(.black)
       .foregroundColor(Color("TextColor"))
   }
 }
 
 #Preview {
-  InstructionText()
+  VStack {
+    InstructionText(text: "Instructions")
+    BigNumberText(text: "999")
+  }
 }
