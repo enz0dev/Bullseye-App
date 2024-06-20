@@ -26,16 +26,21 @@ struct ContentView: View {
           .font(.footnote)
           .kerning(2.0)
           .padding(.horizontal, 30)
+          .foregroundColor(Color("TextColor"))
+        
         Text(String(game.target))
           .font(.largeTitle)
           .kerning(-1)
           .fontWeight(.black)
+          .foregroundColor(Color("TextColor"))
         HStack {
           Text("0")
             .bold()
+            .foregroundColor(Color("TextColor"))
           Slider(value: $sliderValue, in: 1.0...100.0)
           Text("100")
             .bold()
+            .foregroundColor(Color("TextColor"))
         }
         .padding()
         Button("Hit me".uppercased()) {
