@@ -17,6 +17,7 @@ struct RoundedImageViewStroked: View {
       .frame(width: 56, height: 56)
   }
 }
+
 struct previewView: View {
   var body: some View {
     
@@ -29,6 +30,7 @@ struct previewView: View {
 
 #Preview {
   previewView()
+    .preferredColorScheme(.light)
 }
 
 #Preview {
