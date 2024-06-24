@@ -10,6 +10,7 @@
 		D263C5162C19D291004E3722 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263C5152C19D291004E3722 /* Game.swift */; };
 		D263C51F2C1DF8BD004E3722 /* BullseyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263C51E2C1DF8BD004E3722 /* BullseyeTests.swift */; };
 		D263C5262C246AF0004E3722 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263C5252C246AF0004E3722 /* TextViews.swift */; };
+		D263C52A2C29C1D1004E3722 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263C5292C29C1D1004E3722 /* RoundedViews.swift */; };
 		D2F7CA7C2C14C18600606636 /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F7CA7B2C14C18600606636 /* BullseyeApp.swift */; };
 		D2F7CA7E2C14C18600606636 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F7CA7D2C14C18600606636 /* ContentView.swift */; };
 		D2F7CA802C14C18700606636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F7CA7F2C14C18700606636 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		D263C51C2C1DF8BD004E3722 /* BullseyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D263C51E2C1DF8BD004E3722 /* BullseyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeTests.swift; sourceTree = "<group>"; };
 		D263C5252C246AF0004E3722 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
+		D263C5292C29C1D1004E3722 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		D2F7CA782C14C18600606636 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7CA7B2C14C18600606636 /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
 		D2F7CA7D2C14C18600606636 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				D2F7CA7D2C14C18600606636 /* ContentView.swift */,
 				D263C5252C246AF0004E3722 /* TextViews.swift */,
+				D263C5292C29C1D1004E3722 /* RoundedViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				D2F7CA7E2C14C18600606636 /* ContentView.swift in Sources */,
 				D263C5262C246AF0004E3722 /* TextViews.swift in Sources */,
+				D263C52A2C29C1D1004E3722 /* RoundedViews.swift in Sources */,
 				D263C5162C19D291004E3722 /* Game.swift in Sources */,
 				D2F7CA7C2C14C18600606636 /* BullseyeApp.swift in Sources */,
 			);
