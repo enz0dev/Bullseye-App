@@ -11,20 +11,21 @@ struct RoundedImageView: View {
   var systemName: String
   
   var body: some View {
-      ZStack {
-        Circle()
-          .fill(Color("ButtonFilledBackgroundColor"))
-          .frame(width: 56, height: 56)
-          .overlay(
-            Circle()
-              .strokeBorder(Color("AccentColor"), lineWidth: 5.0)
-          )
-        Image(systemName: systemName)
-          .font(.title)
-          .foregroundColor(Color("ButtonFilledTextColor"))
-      }
+    ZStack {
+      Circle()
+        .fill(Color("AccentColor"))
+        .frame(width: 56, height: 56)
+        .overlay(
+          Circle()
+            .strokeBorder(Color("AccentColor"), lineWidth: 3.0)
+        )
+      Image(systemName: systemName)
+        .font(.title)
+        .bold()
+        .foregroundColor(Color("ButtonFilledTextColor"))
     }
   }
+}
 
 struct previewView: View {
   var body: some View {
@@ -36,7 +37,22 @@ struct previewView: View {
   }
 }
 
+struct RoundRectTextView: View {
+  var text: String
+  
+  var body: some View {
+    Text(text)
+      .font(.title3)
+      .bold()
+      .kerning(-0.2)
+      .foregroundColor(Color("ButtonFilledTextColor"))
+  }
+}
+
 #Preview {
-  previewView()
+  VStack {
+    previewView()
+    RoundRectTextView(text: "99")
+  }
 }
 
