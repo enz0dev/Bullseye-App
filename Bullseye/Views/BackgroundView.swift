@@ -86,7 +86,9 @@ struct RingsView: View {
       let size = CGFloat(ring * 100)
         Circle()
           .stroke(lineWidth: 20)
-          .fill(RadialGradient)
+          .fill(
+            RadialGradient(gradient: Gradient(colors: [Color("BackgroundRingsColor").opacity(0.3 * 0.8), Color("BackgroundRingsColor").opacity(0.0)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: 100, endRadius: 300)
+          )
           .frame(width: size, height: size)
       }
       }
