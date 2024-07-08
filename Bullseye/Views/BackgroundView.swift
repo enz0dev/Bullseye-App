@@ -29,7 +29,12 @@ struct TopView: View {
   
   var body: some View {
     HStack {
-      RoundedImageView(systemName: "arrow.counterclockwise")
+      Button(
+        action: {
+          game.restart()
+        }, label: {
+          RoundedImageView(systemName: "arrow.counterclockwise")
+        })
       Spacer()
       RoundedImageView(systemName: "list.dash")
     }
