@@ -18,8 +18,7 @@ struct BackgroundView: View {
     }
     .padding()
     .background(
-      Color("BackgroundColor")
-        .ignoresSafeArea()
+      RingsView()
     )
   }
 }
