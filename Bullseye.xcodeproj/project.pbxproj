@@ -12,6 +12,7 @@
 		D263C5262C246AF0004E3722 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263C5252C246AF0004E3722 /* TextViews.swift */; };
 		D263C52A2C29C1D1004E3722 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263C5292C29C1D1004E3722 /* RoundedViews.swift */; };
 		D263C52C2C2C1463004E3722 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263C52B2C2C1463004E3722 /* BackgroundView.swift */; };
+		D263C52E2C3D9635004E3722 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263C52D2C3D9635004E3722 /* PointsView.swift */; };
 		D2F7CA7C2C14C18600606636 /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F7CA7B2C14C18600606636 /* BullseyeApp.swift */; };
 		D2F7CA7E2C14C18600606636 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F7CA7D2C14C18600606636 /* ContentView.swift */; };
 		D2F7CA802C14C18700606636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F7CA7F2C14C18700606636 /* Assets.xcassets */; };
