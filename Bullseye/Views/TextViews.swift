@@ -92,5 +92,8 @@ struct ButtonText: View {
     SliderLabelText(text: "99")
     LabelText(title: "score")
     RoundRectTextView(text: "999")
+    BodyText(text: "You scored 200 points\n 😻😻😻")
+    ButtonText(text: "Start New Round")
+      .padding()
   }
 }
