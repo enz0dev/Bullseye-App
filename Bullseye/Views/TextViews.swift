@@ -55,6 +55,36 @@ struct LabelText: View {
   }
 }
 
+struct BodyText: View {
+  var text: String
+  
+  var body: some View {
+    Text(text)
+      .multilineTextAlignment(.center)
+      .font(.subheadline)
+      .fontWeight(.semibold)
+      .lineSpacing(12)
+  }
+}
+
+struct ButtonText: View {
+  var text: String
+  
+  var body: some View {
+    Text(text)
+      .padding()
+      .frame(maxWidth: .infinity)
+      .multilineTextAlignment(.center)
+      .font(.body)
+      .bold()
+      .background(
+        Color.accentColor
+      )
+      .foregroundColor(.white)
+      .cornerRadius(12.0)
+  }
+}
+
 #Preview {
   VStack {
     InstructionText(text: "Instructions")
