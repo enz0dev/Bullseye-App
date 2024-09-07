@@ -86,24 +86,9 @@ struct HitMeButton: View {
     .cornerRadius(21.0)
     .bold()
     .font(.title3)
-    .alert(
-      "Hello there!",
-      isPresented: $alertIsVisible,
-      actions: {
-        Button("Awesome") {
-          game.startNewRound(points: game.points(sliderValue: Int(sliderValue)))
-        }
-      },
-      message: {
-        let roundedValue = Int(sliderValue.rounded())
-        Text("""
-          The slider's value is \(roundedValue).
-          You scored \(game.points(sliderValue: roundedValue)) points this round.
-          """)
-      }
-    )
   }
 }
+
 #Preview {
   ContentView()
 }
