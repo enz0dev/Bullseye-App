@@ -36,6 +36,7 @@
 		D263C5252C246AF0004E3722 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		D263C5292C29C1D1004E3722 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		D263C52B2C2C1463004E3722 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		D263C52D2C3D9635004E3722 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		D2F7CA782C14C18600606636 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7CA7B2C14C18600606636 /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
 		D2F7CA7D2C14C18600606636 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 				D263C5252C246AF0004E3722 /* TextViews.swift */,
 				D263C5292C29C1D1004E3722 /* RoundedViews.swift */,
 				D263C52B2C2C1463004E3722 /* BackgroundView.swift */,
+				D263C52D2C3D9635004E3722 /* PointsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,6 +248,7 @@
 				D2F7CA7E2C14C18600606636 /* ContentView.swift in Sources */,
 				D263C5262C246AF0004E3722 /* TextViews.swift in Sources */,
 				D263C52A2C29C1D1004E3722 /* RoundedViews.swift in Sources */,
+				D263C52E2C3D9635004E3722 /* PointsView.swift in Sources */,
 				D263C5162C19D291004E3722 /* Game.swift in Sources */,
 				D2F7CA7C2C14C18600606636 /* BullseyeApp.swift in Sources */,
 			);
