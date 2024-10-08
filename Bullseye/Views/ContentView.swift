@@ -9,11 +9,12 @@ import SwiftUI
 
 // we are defining a template for an instance called ContentView that is a View
 struct ContentView: View {
-  // we are defining a computed property called body. body is a property of type some View
+  
   @State private var alertIsVisible = false
   @State private var sliderValue = 50.0
   @State private var game = Game()
   
+  // we are defining a computed property called body. body is a property of type some View
   var body: some View {
     ZStack {
       BackgroundView(game: $game)
