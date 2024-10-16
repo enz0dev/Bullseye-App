@@ -54,7 +54,7 @@ struct NumberView: View {
           .frame(width: 68.00, height: 55.78)
           .overlay(
             RoundedRectangle(cornerRadius: 21.0)
-              .strokeBorder(Color("AccentColor"), lineWidth: 3.0)
+              .strokeBorder(Color("AccentColor"), lineWidth: Constants.General.strokeWidth)
           )
         RoundRectTextView(text: text)
       }
