@@ -17,7 +17,7 @@ struct RoundedImageView: View {
         .frame(width: 56, height: 56)
         .overlay(
           Circle()
-            .strokeBorder(Color("AccentColor"), lineWidth: 3.0)
+            .strokeBorder(Color("AccentColor"), lineWidth: Constants.General.strokeWidth)
         )
       Image(systemName: systemName)
         .font(.title)
