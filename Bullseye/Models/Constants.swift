@@ -9,5 +9,6 @@ import Foundation
 
 enum Constants {
   enum General {
+    public static let strokeWidth = CGFloat(2)
   }
 }
