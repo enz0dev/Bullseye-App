@@ -22,7 +22,9 @@ struct PointsView: View {
       BigNumberText(text: String(roundedValue))
       BodyText(text: "You scored \(points) points\n 🎉🎉🎉")
       Button(action: {
-        alertIsVisible = false
+        withAnimation {
+          alertIsVisible = false          
+        }
         game.startNewRound(points: points)
       }, label: {
         ButtonText(text: "Start New Round")
