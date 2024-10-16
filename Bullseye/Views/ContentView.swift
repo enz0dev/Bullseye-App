@@ -72,7 +72,9 @@ struct HitMeButton: View {
   var body: some View {
     
     Button("Hit me".uppercased()) {
-      alertIsVisible = true
+      withAnimation {
+        alertIsVisible = true
+      }
     }
     .padding(
       20.0)
