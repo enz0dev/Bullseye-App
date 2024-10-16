@@ -86,7 +86,7 @@ struct HitMeButton: View {
     )
     .overlay(
       RoundedRectangle(cornerRadius: 21.0)
-        .strokeBorder(Color.white, lineWidth: 2.0)
+        .strokeBorder(Color.white, lineWidth: Constants.General.strokeWidth)
     )
     .foregroundColor(
       .white)
