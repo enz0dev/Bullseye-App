@@ -13,6 +13,6 @@ enum Constants {
     public static let roundedViewLength = CGFloat(56)
     public static let roundRectViewWidth = CGFloat(68)
     public static let roundRectViewHeight = CGFloat(56)
-    
+    public static let roundRectCornerRadius = CGFloat(21)
   }
 }
