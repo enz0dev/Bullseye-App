@@ -49,10 +49,21 @@ struct RoundRectTextView: View {
   }
 }
 
+struct RoundedTextView: View {
+  var text: String
+  
+  var body: some View {
+    Text(text)
+  }
+}
+
+
+
 #Preview {
   VStack {
     previewView()
     RoundRectTextView(text: "99")
+    RoundedTextView(text: "1")
   }
 }
 
