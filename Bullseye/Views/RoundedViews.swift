@@ -55,17 +55,24 @@ struct RoundedTextView: View {
   var text: String
   
   var body: some View {
-    Text(text)
+    ZStack {
+      Circle()
+        .fill(Color("BackgroundColor"))
+        .frame(width: Constants.General.roundedViewLength, height: Constants.General.roundedViewLength)
+        .overlay(
+          Circle()
+            .strokeBorder(Color("LeaderboardRowColor"), lineWidth: Constants.General.strokeWidth)
+        )
+      Text(text)
+        .font(.title3)
+        .bold()
+        .foregroundColor(Color("ButtonFilledTextColor"))
+    }
   }
 }
 
-
-
+  
 #Preview {
-  VStack {
-    previewView()
-    RoundRectTextView(text: "99")
-    RoundedTextView(text: "1")
-  }
+previewView()
 }
 
