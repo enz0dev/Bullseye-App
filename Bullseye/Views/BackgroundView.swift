@@ -51,7 +51,7 @@ struct NumberView: View {
       ZStack {
         RoundedRectangle(cornerRadius: 21.0)
           .fill(Color("ButtonFilledBackgroundColor"))
-          .frame(width: 68.00, height: 55.78)
+          .frame(width: Constants.General.roundRectViewWidth, height: Constants.General.roundRectViewHeight)
           .overlay(
             RoundedRectangle(cornerRadius: 21.0)
               .strokeBorder(Color("AccentColor"), lineWidth: Constants.General.strokeWidth)
