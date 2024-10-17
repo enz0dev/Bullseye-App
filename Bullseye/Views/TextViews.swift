@@ -85,6 +85,22 @@ struct ButtonText: View {
   }
 }
 
+struct ScoreText: View {
+  var score: Int
+  
+  var body: some View {
+    Text(String(score))
+  }
+}
+
+struct DateText: View {
+  var date: Date
+  
+  var body: some View {
+    Text(date, style: .time)
+  }
+}
+
 #Preview {
   VStack {
     InstructionText(text: "Instructions")
@@ -95,5 +111,7 @@ struct ButtonText: View {
     BodyText(text: "You scored 200 points\n 😻😻😻")
     ButtonText(text: "Start New Round")
       .padding()
+    ScoreText(score: 459)
+    DateText(date: Date())
   }
 }
