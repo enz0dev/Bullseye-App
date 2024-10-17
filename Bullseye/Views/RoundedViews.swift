@@ -30,9 +30,11 @@ struct RoundedImageView: View {
 struct previewView: View {
   var body: some View {
     
-    HStack(spacing: 250) {
+    HStack(spacing: 10) {
       RoundedImageView(systemName: "arrow.counterclockwise")
       RoundedImageView(systemName: "list.dash")
+      RoundRectTextView(text: "99")
+      RoundedTextView(text: "1")
     }
   }
 }
