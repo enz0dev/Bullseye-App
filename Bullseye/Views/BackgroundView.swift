@@ -49,11 +49,11 @@ struct NumberView: View {
       LabelText(title: title)
       
       ZStack {
-        RoundedRectangle(cornerRadius: 21.0)
+        RoundedRectangle(cornerRadius: Constants.General.roundRectCornerRadius)
           .fill(Color("ButtonFilledBackgroundColor"))
           .frame(width: Constants.General.roundRectViewWidth, height: Constants.General.roundRectViewHeight)
           .overlay(
-            RoundedRectangle(cornerRadius: 21.0)
+            RoundedRectangle(cornerRadius: Constants.General.roundRectCornerRadius)
               .strokeBorder(Color("AccentColor"), lineWidth: Constants.General.strokeWidth)
           )
         RoundRectTextView(text: text)
