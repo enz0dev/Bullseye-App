@@ -14,7 +14,7 @@ struct RoundedImageView: View {
     ZStack {
       Circle()
         .fill(Color("AccentColor"))
-        .frame(width: 56, height: 56)
+        .frame(width: Constants.General.roundedViewLength, height: Constants.General.roundedViewLength)
         .overlay(
           Circle()
             .strokeBorder(Color("AccentColor"), lineWidth: Constants.General.strokeWidth)
