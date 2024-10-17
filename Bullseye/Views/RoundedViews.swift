@@ -64,9 +64,10 @@ struct RoundedTextView: View {
             .strokeBorder(Color("LeaderboardRowColor"), lineWidth: Constants.General.strokeWidth)
         )
       Text(text)
+        .bold()
         .font(.title3)
         .bold()
-        .foregroundColor(Color("ButtonFilledTextColor"))
+        .foregroundColor(Color("TextColor"))
     }
   }
 }
