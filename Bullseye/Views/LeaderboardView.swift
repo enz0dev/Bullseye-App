@@ -38,7 +38,7 @@ struct HeaderView: View {
       HStack {
         Spacer()
         Button {
-          print("hi")
+          leaderBoardIsShowing = false
         } label: {
           RoundedImageView(systemName: "xmark")
         }
