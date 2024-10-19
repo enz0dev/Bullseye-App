@@ -25,6 +25,7 @@ struct BackgroundView: View {
 
 struct TopView: View {
   @Binding var game: Game
+  @State var leaderboardIsShowing: Bool = false
   
   var body: some View {
     HStack {
