@@ -89,7 +89,14 @@ struct RowView: View {
   }
 }
 
-
-#Preview {
-  LeaderboardView()
+struct LeaderboardView_Previews: PreviewProvider {
+  static private var leaderboardIsShowing = Binding.constant(false)
+  static var previews: some View {
+    LeaderboardView(leaderBoardIsShowing: leaderboardIsShowing)
+      .preferredColorScheme(.light)
+      .previewInterfaceOrientation(.portrait)
+    LeaderboardView(leaderBoardIsShowing: leaderboardIsShowing)
+      .preferredColorScheme(.dark)
+      .previewInterfaceOrientation(.landscapeRight)
+  }
 }
