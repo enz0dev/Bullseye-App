@@ -36,7 +36,16 @@ struct TopView: View {
           RoundedImageView(systemName: "arrow.counterclockwise")
         })
       Spacer()
-      RoundedImageView(systemName: "list.dash")
+      Button(
+        action: {
+          // show leaderboard
+          leaderboardIsShowing = true
+        }, label: {
+          RoundedImageView(systemName: "list.dash")
+        })
+      .sheet(isPresented: $leaderboardIsShowing) {
+        LeaderboardView(leaderBoardIsShowing: $leaderboardIsShowing)
+      }
     }
   }
 }
