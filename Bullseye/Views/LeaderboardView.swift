@@ -14,7 +14,7 @@ struct LeaderboardView: View {
     ZStack {
       Color("BackgroundColor").ignoresSafeArea()
       VStack(spacing: 10) {
-        HeaderView()
+        HeaderView(leaderBoardIsShowing: $leaderBoardIsShowing)
         LabelView()
         RowView(index: 1, score: 10, date: Date())
       }
