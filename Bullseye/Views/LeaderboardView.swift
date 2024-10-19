@@ -39,10 +39,9 @@ struct HeaderView: View {
         } label: {
           RoundedImageView(systemName: "xmark")
         }
-
       }
     }
-    
+    .padding(.horizontal)
   }
 }
 
