@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LeaderboardView: View {
+  @Binding var leaderBoardIsShowing: Bool
+  
   var body: some View {
     ZStack {
       Color("BackgroundColor").ignoresSafeArea()
