@@ -26,7 +26,12 @@ struct HeaderView: View {
   var body: some View {
     
     ZStack {
-      BigBoldText(text: "Leaderboard")
+      HStack {
+        BigBoldText(text: "Leaderboard")
+        if verticalSizeClass == .regular && horizontalSizeClass == .compact {
+          Spacer()
+        }
+      }
       HStack {
         Spacer()
         Button {
