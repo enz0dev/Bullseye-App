@@ -41,4 +41,15 @@ struct Game {
     target = Int.random(in: 1...100)
   }
   
+  mutating func addToLeaderboard(score: Int) {
+    leaderBoardEntries.append(LeaderboardEntry(score: score, date: Date()))
+    leaderBoardEntries.sort { entry1, entry2 in
+      entry1.score > entry2.score
+    }
+  }
+}
+    
+  struct LeaderboardEntry {
+    let score: Int
+    let date: Date
 }
