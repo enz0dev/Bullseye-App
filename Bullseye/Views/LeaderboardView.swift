@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LeaderboardView: View {
   @Binding var leaderBoardIsShowing: Bool
+  @Binding var game: Game
   
   var body: some View {
     ZStack {
