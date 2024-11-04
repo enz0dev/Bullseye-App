@@ -99,11 +99,12 @@ struct RowView: View {
 
 struct LeaderboardView_Previews: PreviewProvider {
   static private var leaderboardIsShowing = Binding.constant(false)
+  static private var game = Binding.constant(Game(loadTestData: true))
   static var previews: some View {
-    LeaderboardView(leaderBoardIsShowing: leaderboardIsShowing)
+    LeaderboardView(leaderBoardIsShowing: leaderboardIsShowing, game: game)
       .preferredColorScheme(.light)
       .previewInterfaceOrientation(.portrait)
-    LeaderboardView(leaderBoardIsShowing: leaderboardIsShowing)
+    LeaderboardView(leaderBoardIsShowing: leaderboardIsShowing, game: game)
       .preferredColorScheme(.dark)
       .previewInterfaceOrientation(.landscapeRight)
   }
