@@ -17,7 +17,14 @@ struct LeaderboardView: View {
       VStack(spacing: 10) {
         HeaderView(leaderBoardIsShowing: $leaderBoardIsShowing)
         LabelView()
-        RowView(index: 1, score: 10, date: Date())
+        ScrollView {
+          VStack(spacing: 10) {
+            ForEach(game.leaderBoardEntries.indices, id: \.self) { index in
+              let leaderBoardEntry = game.leaderBoardEntries[index]
+              RowView(index: index + 1, score: leaderBoardEntry.score, date: leaderBoardEntry.date)
+            }
+          }
+        }
       }
     }
   }
