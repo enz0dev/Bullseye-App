@@ -1,0 +1,17 @@
+{
+  "images" : [
+    {
+<<<<<<< HEAD
+=======
+      "filename" : "1024.png",
+>>>>>>> parent of 7a7fad2 (Merge pull request #1 from enz0dev/main)
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
